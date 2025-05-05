@@ -1,4 +1,4 @@
-package com.wanted.utils;
+package com.wanted.core.utils;
 
 import java.util.List;
 

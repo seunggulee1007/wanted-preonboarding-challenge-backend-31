@@ -1,4 +1,4 @@
-package com.wanted.utils;
+package com.wanted.core.utils;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
