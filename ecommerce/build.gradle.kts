@@ -33,6 +33,7 @@ subprojects {
         plugin("java")
         plugin("org.springframework.boot")
         plugin("io.spring.dependency-management")
+        plugin("java-library")
     }
 
     java {
