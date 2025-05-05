@@ -1,6 +1,6 @@
-package com.wanted.webcore.advice;
+package com.wanted.ecommerce.webcore.advice;
 
-import com.wanted.webcore.advice.exceptions.DefaultException;
+import com.wanted.ecommerce.webcore.advice.exceptions.DefaultException;
 import lombok.Getter;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.StringUtils;

@@ -1,4 +1,4 @@
-package com.wanted.core.utils;
+package com.wanted.ecommerce.core.utils;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;

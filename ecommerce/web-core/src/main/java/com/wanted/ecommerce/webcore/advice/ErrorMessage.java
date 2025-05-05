@@ -1,4 +1,4 @@
-package com.wanted.webcore.advice;
+package com.wanted.ecommerce.webcore.advice;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

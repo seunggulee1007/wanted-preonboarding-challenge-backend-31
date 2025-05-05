@@ -1,4 +1,4 @@
-package com.wanted.core.utils;
+package com.wanted.ecommerce.core.utils;
 
 
 public class ApiUtil<T> {

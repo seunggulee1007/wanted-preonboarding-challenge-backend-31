@@ -1,6 +1,6 @@
-package com.wanted.webcore.advice.exceptions;
+package com.wanted.ecommerce.webcore.advice.exceptions;
 
-import com.wanted.webcore.advice.ErrorMessage;
+import com.wanted.ecommerce.webcore.advice.ErrorMessage;
 
 public class ConflictException extends DefaultException {
 
