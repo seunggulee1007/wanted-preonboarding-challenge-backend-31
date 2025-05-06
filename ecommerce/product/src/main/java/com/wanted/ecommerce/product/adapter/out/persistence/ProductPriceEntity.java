@@ -1,5 +1,6 @@
 package com.wanted.ecommerce.product.adapter.out.persistence;
 
+import com.wanted.ecommerce.generator.IdGenerator;
 import jakarta.persistence.*;
 
 import java.util.Currency;
@@ -9,6 +10,7 @@ import java.util.Currency;
 public class ProductPriceEntity {
 
     @Id
+    @IdGenerator
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)

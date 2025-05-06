@@ -1,5 +1,6 @@
 package com.wanted.ecommerce.product.adapter.out.persistence;
 
+import com.wanted.ecommerce.generator.IdGenerator;
 import com.wanted.ecommerce.product.domain.ProductStatus;
 import jakarta.persistence.*;
 
@@ -12,6 +13,7 @@ import java.util.List;
 public class ProductEntity {
 
     @Id
+    @IdGenerator
     private Long id;
     private String name;
     /**

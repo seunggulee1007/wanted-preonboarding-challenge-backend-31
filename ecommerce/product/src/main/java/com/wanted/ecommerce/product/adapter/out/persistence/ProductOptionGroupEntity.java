@@ -1,5 +1,6 @@
 package com.wanted.ecommerce.product.adapter.out.persistence;
 
+import com.wanted.ecommerce.generator.IdGenerator;
 import jakarta.persistence.*;
 import lombok.Getter;
 
@@ -9,6 +10,7 @@ import lombok.Getter;
 public class ProductOptionGroupEntity {
 
     @Id
+    @IdGenerator
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
@@ -24,6 +26,5 @@ public class ProductOptionGroupEntity {
      * 표시 순서
      */
     private float displayOrder;
-
 
 }

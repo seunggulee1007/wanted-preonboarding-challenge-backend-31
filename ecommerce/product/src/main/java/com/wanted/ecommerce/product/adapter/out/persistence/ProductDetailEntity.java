@@ -1,6 +1,7 @@
 package com.wanted.ecommerce.product.adapter.out.persistence;
 
 import com.vladmihalcea.hibernate.type.json.JsonType;
+import com.wanted.ecommerce.generator.IdGenerator;
 import jakarta.persistence.*;
 import lombok.Getter;
 import org.hibernate.annotations.Type;
@@ -11,6 +12,7 @@ import org.hibernate.annotations.Type;
 public class ProductDetailEntity {
 
     @Id
+    @IdGenerator
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)

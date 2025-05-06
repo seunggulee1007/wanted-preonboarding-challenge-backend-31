@@ -1,5 +1,6 @@
 package com.wanted.ecommerce.product.adapter.out.persistence;
 
+import com.wanted.ecommerce.generator.IdGenerator;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -7,10 +8,11 @@ import lombok.Getter;
 
 @Getter
 @Entity
-@Table(name ="brand")
+@Table(name = "brand")
 public class BrandEntity {
 
     @Id
+    @IdGenerator
     private Long id;
     /**
      * 브랜드 이름

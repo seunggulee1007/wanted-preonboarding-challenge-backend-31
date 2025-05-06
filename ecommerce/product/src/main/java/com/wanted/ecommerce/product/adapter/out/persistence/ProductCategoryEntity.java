@@ -1,5 +1,6 @@
 package com.wanted.ecommerce.product.adapter.out.persistence;
 
+import com.wanted.ecommerce.generator.IdGenerator;
 import jakarta.persistence.*;
 
 @Entity
@@ -7,6 +8,7 @@ import jakarta.persistence.*;
 public class ProductCategoryEntity {
 
     @Id
+    @IdGenerator
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
