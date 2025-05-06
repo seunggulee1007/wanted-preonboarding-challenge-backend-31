@@ -1,4 +1,4 @@
-package com.wanted.ecommerce.product.adapter.out.persistence;
+package com.wanted.ecommerce.product.domain;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

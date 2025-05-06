@@ -1,7 +1,9 @@
 package com.wanted.ecommerce.product.adapter.out.persistence;
 
+import com.vladmihalcea.hibernate.type.json.JsonType;
 import jakarta.persistence.*;
 import lombok.Getter;
+import org.hibernate.annotations.Type;
 
 @Getter
 @Entity
@@ -21,8 +23,9 @@ public class ProductDetailEntity {
     /**
      * 크기
      */
+    @Type(JsonType.class)
     @Column(columnDefinition = "json")
-    private String dimension;
+    private DimensionsEntity dimension;
     /**
      * 소재정보
      */
@@ -42,8 +45,8 @@ public class ProductDetailEntity {
     /**
      * 추가 정보
      */
-    @Lob
-    @Column(columnDefinition = "JSONB")
-    private String additionalInfo;
+    @Type(JsonType.class)
+    @Column(columnDefinition = "jsonb")
+    private AdditionalInfoEntity additionalInfo;
 
 }

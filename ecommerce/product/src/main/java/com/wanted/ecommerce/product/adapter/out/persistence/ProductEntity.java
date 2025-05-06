@@ -1,5 +1,6 @@
 package com.wanted.ecommerce.product.adapter.out.persistence;
 
+import com.wanted.ecommerce.product.domain.ProductStatus;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
